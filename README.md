@@ -17,21 +17,21 @@ This project simulates a real-world control system where a motor starts only aft
 
 ## 🧾 System Description
 
-### 🟦 Inputs
+###  Inputs
 | Tag | Description |
 |-----|-------------|
 | `B3:0/0` | Simulated Part Sensor Pulse |
 | `B3:0/4` | Analog Override (Unsafe Pressure Bit) |
 | `F8:0` | Scaled Analog Pressure Value (PSI) |
 
-### 🟥 Outputs
+###  Outputs
 | Tag | Description |
 |-----|-------------|
 | `B3:0/2` | Motor Enable Output |
 | `B3:0/6` | Motor Trigger (latched when 3 parts arrive) |
 | `B3:0/7` | Unsafe Pressure Indicator |
 
-📸 System States to Document
+### 📸 System States to Document
 Resting State
 
 Counter = 0, pressure is safe, motor is OFF, no unsafe light
@@ -52,7 +52,7 @@ Reset / System Clear
 
 Manual reset rung deactivates system and prepares for next batch
 
-💡 Real-World Applications
+### 💡 Real-World Applications
 Batch part handling or feeder logic
 
 Interlocked conveyor systems
@@ -61,7 +61,7 @@ Pressure-controlled valve/motor activation
 
 Industrial motor logic where analog safety is required
 
-🛠 Tools Used
+### 🛠 Tools Used
 RSLogix Micro Starter Lite
 
 RSLinx Classic
